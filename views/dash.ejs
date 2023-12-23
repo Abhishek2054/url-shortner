@@ -1,0 +1,28 @@
+
+<div class="container my-5">
+    <h1 class="text-center">URL Shortner <a href="/auth/logout" class="btn btn-secondary ml-5">Logout</a></h1> 
+    <form action="/shorten" method="post" class="my-4 form-floating mb-3">
+        <input required type="url" class="mb-3 form-control col" name="fullUrl" id="fullUrl">
+        <label for="fullUrl">URL</label>
+        <button type="submit" class="btn btn-success">Short Now</button>
+    </form>
+
+    <h1 class="text-center">The List of URLs</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-center">Full URL</th>
+                <th class="text-center">Short URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% urls.forEach( url => { %>
+                <tr>
+                    <td class="text-center"><a href="<%= url.original %>"><%= url.original %></a></td>
+                    <td class="text-center"><a href="<%= url.original %>" target="_blank"><%= url.short %></a></td>
+                </tr>
+            <% }) %>
+
+        </tbody>
+    </table>
+</div>

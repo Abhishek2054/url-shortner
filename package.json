@@ -1,0 +1,41 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "This project allows user to shorten the lengthy URLs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhishek2054/url-shortner.git"
+  },
+  "author": "Abhishek Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abhishek2054/url-shortner/issues"
+  },
+  "homepage": "https://github.com/Abhishek2054/url-shortner#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "googleapis": "^109.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^8.0.3",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^3.0.2",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.16"
+  }
+}
