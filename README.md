@@ -1,5 +1,5 @@
 # Important links
-- Hosting Link: https://loginapp-wybl.onrender.com/
+- Hosting Link: https://url-shortner-lmwh.onrender.com
 
 # Screenshots
 Dashboard of the URL shortner
